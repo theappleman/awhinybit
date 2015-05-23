@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body style="background: pink; color: white; font-size: 20em; text-align: center;" onload="updatemain()">
+<p id="main">umm...</p>
+<script>
+var updatemain = function() {
+	"use strict";
+	var url = window.location.href;
+	var params = url.split('.');
+	var main = document.getElementById("main");
+
+	if (params[0]=="http://isdaniel"||params[0]=="https://isdaniel") {
+		main.innerHTML = "No";
+	} else if (params[0]=="http://isstephane"||params[0]=="https://isstephane") {
+		main.innerHTML = "Oui";
+	} else if (params[0]=="http://isesteban"||params[0]=="https://isesteban") {
+		var split = url.split('?');
+		if (split[1]===undefined||split[1].length==0) {
+			main.innerHTML = "Who?";
+		} else {
+			main.innerHTML = "DEFINITELY!";
+		}
+	} else if (params[0]=="http://israfael"||params[0]=="https://israfael") {
+		main.innerHTML = "Who?";
+	} else if (params[0]=="http://iscj"||params[0]=="https://iscj") {
+		main.innerHTML = "いいえ";
+	} else {
+		main.innerHTML = "Yes!";
+	}
+};
+</script>
+</body>
+</html>
