@@ -1,0 +1,24 @@
+{
+  "name": "awhinybit",
+  "version": "1.0.0",
+  "description": "Website files for *.awhinybit.ch",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theappleman/awhinybit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theappleman/awhinybit/issues"
+  },
+  "homepage": "https://github.com/theappleman/awhinybit#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.11.0"
+  }
+}
